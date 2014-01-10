@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>dnbPlayer</title>   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="http://api.html5media.info/1.1.6/html5media.min.js"></script>
+        <script src="js/bootstrap.js"></script>       
+        <script type="text/javascript" src="js/zepto.min.js"></script>
+        <style>
+			@font-face {
+			  font-family: 'FiraSans';
+			  src: url('fonts/FiraSans/FiraSans-Light.eot');
+			  src: url('fonts/FiraSans/FiraSans-Light.eot?#iefix') format('embedded-opentype'),
+			       url('fonts/FiraSans/FiraSans-Light.woff') format('woff'),
+			       url('fonts/FiraSans/FiraSans-Light.ttf') format('truetype');
+			  font-weight: 300;
+			  font-style: normal;
+			}            
+			.container {
+			  padding: 0 15px;
+			                max-width: 380px;
+			                _width: 380px;
+			                margin: 0 auto;                
+			}   
+
+			            html {
+			                padding: 30px 10px;
+			                font-size: 20px;
+			                line-height: 1.4;
+			                color: #737373;
+			                background: #f0f0f0;
+			                -webkit-text-size-adjust: 100%;
+			                -ms-text-size-adjust: 100%;
+			            }
+
+			            html {
+			                font-family: 'FiraSans';
+			            }
+
+			            body {
+			                max-width: 500px;
+			                _width: 500px;
+			                padding: 30px 20px 50px;
+			                border: 1px solid #b3b3b3;
+			                border-radius: 4px;
+			                margin: 0 auto;
+			                box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
+			                background: #fcfcfc;
+			            }
+
+			            h1 {
+			                margin: 0 10px;
+			                font-size: 49px;
+			                text-align: center;
+			                font-family: 'FiraSans';
+			            }
+
+			            h1 span {
+			                color: #bbb;
+			            }
+
+			            h3 {
+			                margin: 1.5em 0 0.5em;
+			            }
+
+			            p {
+			                margin: 1em 0;
+			            }
+			.red
+			{
+			    background-color:red;
+			}           
+        </style>
+    </head>
+<body>
+    <div class="container">  
+        <div class="page-header">
+          <h1>dnb <small>player</small></h1>
+        </div>
+        <div class="list-group" data-toggle="buttons">
+              <a href="#" class="list-group-item">          
+            <audio mozaudiochannel="content" id="bassdrive" src="http://shouthost.com.80-1.streams.bassdrive.com:80/;stream.mp3"></audio>
+                        BassDrive.com
+                        <span onclick="document.getElementById('bassdrive').play()"  class="glyphicon glyphicon-play"></span>
+                        <span onclick="document.getElementById('bassdrive').pause()"  class="glyphicon glyphicon-pause"></span></a>
+              <a href="#" class="list-group-item">      
+                  <audio mozaudiochannel="content" id="dnbradio" src="http://source2.dnbradio.com:13128/nometa.ogg"></audio>
+                        Dnbradio.com
+                        <span onclick="document.getElementById('dnbradio').play()"  class="glyphicon glyphicon-play"></span>
+                        <span onclick="document.getElementById('dnbradio').pause()"  class="glyphicon glyphicon-pause"></span></a>
+              <a href="#" class="list-group-item">      
+                  <audio mozaudiochannel="content" id="ukbassradio" src="http://usa1-pn.webcast-server.net/8206/stream.mp3"></audio>
+                        ukbassradio.com
+                        <span onclick="document.getElementById('ukbassradio').play()"  class="glyphicon glyphicon-play"></span>
+                        <span onclick="document.getElementById('ukbassradio').pause()"  class="glyphicon glyphicon-pause"></span></a>
+              <a href="#" class="list-group-item">                  
+                  <audio mozaudiochannel="content" id="drumandbass" src="http://212.48.65.54:2470/;"></audio>
+                        247drumandbass.com
+                        <span onclick="document.getElementById('drumandbass').play()"  class="glyphicon glyphicon-play"></span>
+                        <span onclick="document.getElementById('drumandbass').pause()"  class="glyphicon glyphicon-pause"></span></a>
+        </div><!-- /list-group --> 
+    </div><!-- /container -->  
+<script>
+$('span').click(function(){
+    $('span').removeClass('red')
+        $(this).addClass('red');
+});
+</script>    
+</body>
+</html>

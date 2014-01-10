@@ -1,0 +1,34 @@
+{
+  "name": "dnb Player",
+  "description": "Internet dnb radio player",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/assets/image/icon_16.png",
+    "32": "/assets/image/icon_32.png",
+    "48": "/assets/image/icon_48.png",
+    "60": "/assets/image/icon_60.png",
+    "90": "/assets/image/icon_90.png",
+    "120": "/assets/image/icon_120.png",
+    "128": "/assets/image/icon_128.png",
+    "256": "/assets/image/icon_256.png"
+  },
+  "version": "0.1B",
+  "orientation": [
+    "portrait",
+    "landscape-secondary"
+  ],
+  "developer": {
+    "name": "abr4xas",
+    "url": "https://github.com/abr4xas/dnbPlayer"
+  },
+  "default_locale": "en",
+  "permissions": {
+    "audio-channel-content": {
+      "description": "Use the audio channel for the music player"
+    }
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "locales": {}
+}
