@@ -1,9 +1,0 @@
-{
-    "name": "dnbPlayer",
-    "package_path" : "dnbplayer.zip",
-    "version": "1",
-    "developer": {
-        "name": "abr4xas",
-        "url": "http://abr4xas.org"
-    }
-}

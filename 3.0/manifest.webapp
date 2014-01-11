@@ -12,7 +12,7 @@
     "128": "/assets/image/icon_128.png",
     "256": "/assets/image/icon_256.png"
   },
-  "version": "0.1B",
+  "version": "3.0",
   "orientation": [
     "portrait",
     "landscape-secondary"

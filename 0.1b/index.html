@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>DnB Player - BassDrive.com</title>
+        <script src="html5media.min.js"></script>
+        <link rel="stylesheet" href="headers.css">
+      <!-- Util CSS: some extra tricks -->
+      <link rel="stylesheet" href="fonts.css">
+    
+      <!-- Additional markup to make Building Blocks kind of cross browser -->
+      <link rel="stylesheet" href="cross_browser.css">        
+		<style type="text/css">
+               html, body {
+                 margin: 0;
+                 padding: 0;
+                 font-size: 10px;
+                 background-image: url(images/dnb.jpg);
+                 background-repeat: no-repeat;
+                 background-position: center center;
+                 background-attachment: fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+			    background-color: #458B00;
+			    font-weight: 100%; 
+			    font-stretch:condensed;                
+                height: 100%;
+             }
+            h1{
+                text-align: center;
+			}		
+			p{
+				font-style:normal;
+				font-variant:small-caps;
+				line-height:200%;
+			}	         
+            .audio-player{
+                margin: 0;
+                padding: 0;
+                border: none;
+                outline: none;
+                width:inherit;
+            }
+            .site-footer{
+                background-color:#000;
+                width:100%;
+            }
+
+    section[role="region"] {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+  </style>
+</head>
+<body role="application">
+  <section role="region" class="skin-dark">
+    <header>
+      <a href="#"><span class="icon icon-back">back</span></a>
+      <h1>DnB Player - BassDrive.com</h1>
+    </header>
+  </section>        
+          
+        
+<footer class="site-footer">
+        <audio mozaudiochannel="content" class="audio-player" preload="auto" controls>
+         <source src="http://shouthost.com.80-1.streams.bassdrive.com:80/;stream.mp3" type="audio/mpeg" />
+         <p>Your browser does not support the audio tag.</p>
+        </audio>
+</footer>        
+        
+	</body>
+</html>
